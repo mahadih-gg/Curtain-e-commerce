@@ -1,17 +1,61 @@
-.navbar{
+.navbar .nav-item .nav-link{
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+    transition: all ease 0.3s;
+}
 
+.navbar .nav-item .nav-link:hover{
+    border-bottom: 1px solid #52ab98;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 40%, rgba(82, 171, 152, 0.10) 100%);
+    transition: all ease 0.5s;
+}
+
+.profile-dropdown{
+    left:0px;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-dropdown{
+        left: -120px !important;
+    }
 }
 
 /* =============== Header ============= */
 .header-carousel .carousel-item img{
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   object-fit: cover;
   border-radius: 5px;
 }
 
-/* =============== Card ============= */
 
+/* =============== Category Card ============= */
+.category-card {
+  background-image: linear-gradient(0deg, red 0%, green 100%);  
+  /* width: $card-size;
+  height: $card-size;
+  margin: $p-m-default; */
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card .card-image {
+  height: 300px;
+  object-fit: cover;
+  transform: translate(0,0);
+  transition: all ease 400ms;
+}
+
+.category-card .card-meta {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px; 
+}
+
+
+
+
+/* =============== Product Card ============= */
 .product-card{
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -30,7 +74,7 @@
 }
 .product-card .product-discount-label{
     color: #fff;
-    background: #A5BA8D;
+    background: #2b6777;
     font-size: 13px;
     font-weight: 600;
     line-height: 25px;
@@ -68,7 +112,7 @@
     background: #333;
 }
 .product-card .add-to-cart{
-    background: #A5BA8D;
+    background: #2b6777;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase;
@@ -85,7 +129,8 @@
 .product-card .product-content{
     background: #fff;
     padding: 15px;
-    box-shadow: 0 0 0 5px rgba(0,0,0,0.1) inset;
+    box-shadow: 0 0 0 5px rgba(42,103,119,0.2) inset;
+
 }
 .product-card .title{
     font-size: 16px;
@@ -97,7 +142,7 @@
     color: #777;
     transition: all 0.3s ease 0s;
 }
-.product-card .title a:hover{ color: #a5ba8d; }
+.product-card .title a:hover{ color: #2b6777; }
 .product-card .price{
     color: #0d0d0d;
     font-size: 14px;

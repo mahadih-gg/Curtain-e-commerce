@@ -42,31 +42,21 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
+            <a class="nav-link" href="#">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+            <a class="nav-link" href="#">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
           </li>
         </ul>
 
         <div class="dropdown">
-          <button class="border-0 rounded-circle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          <button class="border-0 rounded-circle d-none d-lg-block" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
             aria-expanded="false">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -80,12 +70,19 @@
           </ul>
         </div>
 
-        <button class="border-0 fs-5 mx-4">
+        <button class="border-0 fs-5 my-3 my-lg-0 me-4 mx-lg-4">
           <i class="fa-sharp fa-solid fa-heart"></i>
         </button>
-        <button class="border-0 fs-5 me-4">
+        <button class="border-0 fs-5 mb-3 my-lg-0 me-lg-4">
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
+
+        <form class="d-flex d-lg-none mb-3" style="width: 300px;">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
 
         <div class="dropdown">
           <button class="border-0 rounded-circle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -93,7 +90,7 @@
             <img src="./assets/images/profile.jpg" class="rounded-circle" width="40px" height="40px"
               style="object-fit:cover" />
           </button>
-          <ul class="dropdown-menu" style="left: -120px" aria-labelledby="dropdownMenuButton1">
+          <ul class="dropdown-menu profile-dropdown" aria-labelledby="dropdownMenuButton1">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -131,6 +128,24 @@
   </header>
 
   <main>
+
+  <!---================== Category section ==================--->
+  <section class="container">
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card category-card" role="article">
+          <a href="#">
+            <div class="card-text">
+              <div class="card-meta">Architecture</div>
+              <h2 class="card-title">A Photographer’s Weekend House By General Design</h2>
+            </div>
+            <img class="card-image" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" />
+          </a>
+        </div>
+      </div>
+
+  </section>
 
     <!---================== Feature Product ==================--->
     <section class="container bg-light text-muted py-3 my-4 rounded">
