@@ -70,10 +70,12 @@
           </ul>
         </div>
 
-        <button class="border-0 fs-5 my-3 my-lg-0 me-4 mx-lg-4">
+        <button class="border-0 fs-5 my-3 my-lg-0 me-4 mx-lg-4 position-relative">
+            <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white" style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
           <i class="fa-sharp fa-solid fa-heart"></i>
         </button>
-        <button class="border-0 fs-5 mb-3 my-lg-0 me-lg-4">
+        <button class="border-0 fs-5 mb-3 my-lg-0 me-lg-4 position-relative">
+            <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white" style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
 
@@ -130,111 +132,76 @@
   <main>
 
   <!---================== Category section ==================--->
-  <section class="container text-muted py-3 my-4 rounded">
-
-      <h1 class="heading text-center">Our Feature Products</h1>
-
-    <div class="site__wrapper">
-      <div class="grid">
-          <div class="card">
-            <div class="card__image">
-              <img src="./assets/images/curtain-1.jpg" width="400" height="608" alt="">
-
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-
-                  <a href="#0" class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
-
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="grid">
-          <div class="card">
-            <div class="card__image">
-              <img src="./assets/images/curtain-2.jpg" width="400" height="300" alt="">
-
-              <div class="card__overlay card__overlay--blue">
-                <div class="card__overlay-content">
-                  <a href="#0" class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
-
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="grid">
-          <div class="card">
-            <div class="card__image">
-              <img src="./assets/images/curtain-3.jpg" width="400" height="300" alt="">
-
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-                  <a href="#0" class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
-
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>    
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="grid">
-          <div class="card">
-            <div class="card__image">
-              <img src="./assets/images/curtain-4.jpg" width="400" height="300" alt="">
-
-              <div class="card__overlay card__overlay--indigo">
-                <div class="card__overlay-content">
-
-                  <a href="#0" class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
-
-                  <ul class="card__meta card__meta--last">
-                    <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                    <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                  </ul>   
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-
-      <div class="grid">
-          <div class="card">
-            <div class="card__image">
-              <img src="./assets/images/curtain-5.jpg" width="400" height="300" alt="">
-
-                <div class="card__overlay card__overlay--blue">
-                  <div class="card__overlay-content">
-                        <a href="#0" class="card__title">Lorem ipsum, dolor sit amet consectetur adipisicing.</a>
-
-                        <ul class="card__meta card__meta--last">
-                          <li><a href="#0"><i class="fa fa-user"></i> Mithicher</a></li>
-                          <li><a href="#0"><i class="fa fa-facebook-square"></i> Share</a></li>
-                        </ul>   
+    <section class="container text-muted py-3 mt-4 rounded">
+      <h1 class="heading text-center">Category</h1>
+      <div class="">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
+            <div className="category-box">
+            <div>
+                <div class="card text-dark category-box p-0 m-0">
+                    <img src="./assets/images/curtain-1.jpg" class="card-img" alt="..." />
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <div className="ms-3">
+                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                              <h4>Lorem, ipsum.</h4>
+                          </div>
                       </div>
-                    </div>
                   </div>
                 </div>
-            </div>		
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
+            <div className="category-box">
+            <div>
+                <div class="card text-dark category-box p-0 m-0">
+                    <img src="./assets/images/curtain-2.jpg" class="card-img" alt="..." />
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <div className="ms-3">
+                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                              <h4>Lorem, ipsum.</h4>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
+            <div className="category-box">
+            <div>
+                <div class="card text-dark category-box p-0 m-0">
+                    <img src="./assets/images/curtain-3.jpg" class="card-img" alt="..." />
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <div className="ms-3">
+                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                              <h4>Lorem, ipsum.</h4>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
+            <div className="category-box">
+            <div>
+                <div class="card text-dark category-box p-0 m-0">
+                    <img src="./assets/images/curtain-4.jpg" class="card-img" alt="..." />
+                      <div class="card-img-overlay d-flex align-items-end">
+                          <div className="ms-3">
+                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                              <h4>Lorem, ipsum.</h4>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
+    </section>
 
 
-  </section>
 
     <!---================== Feature Product ==================--->
     <section class="container bg-light text-muted py-3 my-4 rounded">
@@ -386,7 +353,7 @@
       <h1 class="heading text-center">All Products</h1>
       <div class="">
         <div class="row">
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -406,7 +373,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -425,7 +392,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -445,7 +412,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -464,7 +431,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -484,7 +451,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -503,7 +470,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
@@ -523,7 +490,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="product-card">
               <div class="product-image">
                 <a href="#" class="image">
