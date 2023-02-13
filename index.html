@@ -27,7 +27,7 @@
 
 <body>
   <!---================== Navbar ==================--->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: #ADD8E6;">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./assets/brand/brand-logo.png" width="50px" height="50px" class="rounded" />
@@ -53,11 +53,25 @@
           <li class="nav-item">
             <a class="nav-link" href="#">About</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
         </ul>
 
         <div class="dropdown">
-          <button class="border-0 rounded-circle d-none d-lg-block" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button class="nav-icon border-0 rounded-circle d-none d-lg-block" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
           <ul class="dropdown-menu px-2 mt-2" style="left: -250px;" aria-labelledby="dropdownMenuButton1">
@@ -70,25 +84,27 @@
           </ul>
         </div>
 
-        <button class="border-0 fs-5 my-3 my-lg-0 me-4 mx-lg-4 position-relative">
-            <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white" style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
+        <button class="nav-icon border-0 fs-5 my-3 my-lg-0 me-4 mx-lg-4 position-relative">
+          <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white"
+            style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
           <i class="fa-sharp fa-solid fa-heart"></i>
         </button>
-        <button class="border-0 fs-5 mb-3 my-lg-0 me-lg-4 position-relative">
-            <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white" style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
+        <button class="nav-icon border-0 fs-5 mb-3 my-lg-0 me-lg-4 position-relative">
+          <span class="position-absolute rounded-circle d-flex justify-content-center align-items-center text-white"
+            style="width: 14px; height: 14px; background-color: #2b6777; font-size: 10px; right: -8px; top: 0px;">4</span>
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
 
         <form class="d-flex d-lg-none mb-3" style="width: 300px;">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
+          <button class="nav-icon btn btn-outline-success" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
 
         <div class="dropdown">
-          <button class="border-0 rounded-circle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button class="nav-icon border-0 rounded-circle" type="button" id="dropdownMenuButton1"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <img src="./assets/images/profile.jpg" class="rounded-circle" width="40px" height="40px"
               style="object-fit:cover" />
           </button>
@@ -131,72 +147,72 @@
 
   <main>
 
-  <!---================== Category section ==================--->
+    <!---================== Category section ==================--->
     <section class="container text-muted py-3 mt-4 rounded">
       <h1 class="heading text-center">Category</h1>
       <div class="">
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
             <div className="category-box">
-            <div>
+              <div>
                 <div class="card text-dark category-box p-0 m-0">
-                    <img src="./assets/images/curtain-1.jpg" class="card-img" alt="..." />
-                      <div class="card-img-overlay d-flex align-items-end">
-                          <div className="ms-3">
-                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
-                              <h4>Lorem, ipsum.</h4>
-                          </div>
-                      </div>
+                  <img src="./assets/images/curtain-1.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay d-flex align-items-end">
+                    <div className="ms-3">
+                      <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
             <div className="category-box">
-            <div>
+              <div>
                 <div class="card text-dark category-box p-0 m-0">
-                    <img src="./assets/images/curtain-2.jpg" class="card-img" alt="..." />
-                      <div class="card-img-overlay d-flex align-items-end">
-                          <div className="ms-3">
-                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
-                              <h4>Lorem, ipsum.</h4>
-                          </div>
-                      </div>
+                  <img src="./assets/images/curtain-2.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay d-flex align-items-end">
+                    <div className="ms-3">
+                      <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
             <div className="category-box">
-            <div>
+              <div>
                 <div class="card text-dark category-box p-0 m-0">
-                    <img src="./assets/images/curtain-3.jpg" class="card-img" alt="..." />
-                      <div class="card-img-overlay d-flex align-items-end">
-                          <div className="ms-3">
-                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
-                              <h4>Lorem, ipsum.</h4>
-                          </div>
-                      </div>
+                  <img src="./assets/images/curtain-3.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay d-flex align-items-end">
+                    <div className="ms-3">
+                      <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-lg-4 col-xl-3 mt-4">
             <div className="category-box">
-            <div>
+              <div>
                 <div class="card text-dark category-box p-0 m-0">
-                    <img src="./assets/images/curtain-4.jpg" class="card-img" alt="..." />
-                      <div class="card-img-overlay d-flex align-items-end">
-                          <div className="ms-3">
-                              <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
-                              <h4>Lorem, ipsum.</h4>
-                          </div>
-                      </div>
+                  <img src="./assets/images/curtain-4.jpg" class="card-img" alt="..." />
+                  <div class="card-img-overlay d-flex align-items-end">
+                    <div className="ms-3">
+                      <h2 class="card-title">Lorem ipsum dolor sit amet consectetur.</h2>
+                      <h4>Lorem, ipsum.</h4>
+                    </div>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -519,15 +535,19 @@
 
       <div class="row pt-4">
         <div class="col-12 col-lg-6 mb-3 mb-lg-0">
-          <div class="border rounded-3 p-2 p-md-3 p-lg-5 h-100 d-flex flex-column justify-content-center align-items-center">
+          <div
+            class="border rounded-3 p-2 p-md-3 p-lg-5 h-100 d-flex flex-column justify-content-center align-items-center">
             <div class="text-center pb-3">
               <img src="./assets/icon/policy.png" width="100px" height="auto" alt="">
             </div>
-              <h3 class="fs-4">Our Policy</h3>
-            <p class="text-center m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda impedit veniam a quae doloribus culpa provident laudantium molestiae qui debitis distinctio magnam, possimus dignissimos aliquam exercitationem praesentium id recusandae facilis. <a class="text-reset fw-bold" href="#">Our policy</a></p>
+            <h3 class="fs-4">Our Policy</h3>
+            <p class="text-center m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda impedit
+              veniam a quae doloribus culpa provident laudantium molestiae qui debitis distinctio magnam, possimus
+              dignissimos aliquam exercitationem praesentium id recusandae facilis. <a class="text-reset fw-bold"
+                href="#">Our policy</a></p>
           </div>
         </div>
-          
+
         <div class="col-12 col-lg-6 d-flex flex-column gap-2">
           <div class="border rounded-3 p-2 p-md-3 d-flex align-items-center gap-2 gap-md-4">
             <img src="./assets/icon/free-delivary.png" width="20%" height="auto" alt="">
@@ -671,8 +691,8 @@
     <!-- Section  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-      © 2021 Copyright:
+    <div class="text-center p-4" style="background-color: #ADD8E6">
+      © 2023 Copyright:
       <a class="text-reset fw-bold" href="#">curtain-e-commerce</a>
     </div>
     <!-- Copyright -->

@@ -1,3 +1,5 @@
+
+// ============== Home sliders =========== //
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -18,5 +20,28 @@ let swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
       spaceBetween: 30,
     },
+  },
+});
+
+
+
+// ============== Product details sliders =========== //
+let productDetailsSliderThumbSlider = new Swiper(
+  ".productDetailsSliderThumbSlider",
+  {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  }
+);
+let productDetailsSlider = new Swiper(".productDetailsSlider", {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: productDetailsSliderThumbSlider,
   },
 });

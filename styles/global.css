@@ -11,11 +11,12 @@ a{
   text-decoration: none;
 }
 
- /* sizing */
-/* .heading{
-  font-size: 60px;
-  color: red;
-} */
+.w-lg-50{
+  width: 100%;
+}
 
-
- /* Buttons */
+@media screen and (min-width: 992px) {
+    .w-lg-50{
+      width: 50%;
+    }
+}
